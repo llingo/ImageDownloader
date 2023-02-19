@@ -6,7 +6,6 @@
 import UIKit
 
 extension UIStackView {
-
     convenience init(
         axis: NSLayoutConstraint.Axis,
         alignment: UIStackView.Alignment = .fill,

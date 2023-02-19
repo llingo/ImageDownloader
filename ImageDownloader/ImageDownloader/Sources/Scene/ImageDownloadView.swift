@@ -39,8 +39,6 @@ final class ImageDownloadView: UIView {
         configuration.title = "Load"
 
         let button = UIButton(configuration: configuration)
-        button.setContentHuggingPriority(.defaultHigh, for: .horizontal)
-        button.setContentCompressionResistancePriority(.defaultHigh, for: .horizontal)
 
         return button
     }()
@@ -115,6 +113,8 @@ final class ImageDownloadView: UIView {
         )
 
         addSubviews([contentView])
+        loadButton.setContentHuggingPriority(.defaultHigh, for: .horizontal)
+        loadButton.setContentCompressionResistancePriority(.defaultHigh, for: .horizontal)
 
         NSLayoutConstraint.activate([
             contentView.topAnchor.constraint(equalTo: topAnchor),
