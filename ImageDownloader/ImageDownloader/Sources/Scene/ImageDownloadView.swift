@@ -100,20 +100,21 @@ final class ImageDownloadView: UIView {
     }
 
     private func configureView() {
-        let progressContentView = UIStackView(arrangedSubviews: [progressView, progressLabel])
-        progressContentView.axis = .vertical
-        progressContentView.spacing = 8
+        let contentView = UIStackView(
+            axis: .horizontal,
+            alignment: .center,
+            spacing: 16,
+            subviews: [
+                imageView,
+                UIStackView(axis: .vertical, spacing: 8, subviews: [
+                    progressView,
+                    progressLabel
+                ]),
+                loadButton
+            ]
+        )
 
-        let contentView = UIStackView(arrangedSubviews: [
-            imageView,
-            progressContentView,
-            loadButton
-        ])
-        contentView.axis = .horizontal
-        contentView.alignment = .center
-        contentView.spacing = 16
-        contentView.translatesAutoresizingMaskIntoConstraints = false
-        addSubview(contentView)
+        addSubviews([contentView])
 
         NSLayoutConstraint.activate([
             contentView.topAnchor.constraint(equalTo: topAnchor),

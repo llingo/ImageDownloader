@@ -54,21 +54,22 @@ class ImageDownloadViewController: UIViewController {
     private func configureView() {
         view.backgroundColor = .systemBackground
 
-        let contentView = UIStackView(arrangedSubviews: [
-            titleLabel,
-            imageDownloadView1,
-            imageDownloadView2,
-            imageDownloadView3,
-            imageDownloadView4,
-            imageDownloadView5,
-            loadAllButton
-        ])
-        contentView.axis = .vertical
-        contentView.distribution = .equalSpacing
-        contentView.spacing = 16
-        contentView.translatesAutoresizingMaskIntoConstraints = false
-        view.addSubview(contentView)
+        let contentView = UIStackView(
+            axis: .vertical,
+            distribution: .equalSpacing,
+            spacing: 16,
+            subviews: [
+                titleLabel,
+                imageDownloadView1,
+                imageDownloadView2,
+                imageDownloadView3,
+                imageDownloadView4,
+                imageDownloadView5,
+                loadAllButton
+            ]
+        )
 
+        view.addSubviews([contentView])
         let safeAreaGuide = view.safeAreaLayoutGuide
 
         NSLayoutConstraint.activate([

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A73AC49529A2634C003EDED7 /* UIStackView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73AC49429A2634C003EDED7 /* UIStackView+Extension.swift */; };
+		A73AC49729A26547003EDED7 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73AC49629A26547003EDED7 /* UIView+Extension.swift */; };
 		A7C8E8FF29A2593D00A3FA95 /* CallbackQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C8E8FE29A2593D00A3FA95 /* CallbackQueue.swift */; };
 		A7E98D3B29A20FB10027352D /* ImageDownloadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E98D3A29A20FB10027352D /* ImageDownloadView.swift */; };
 		A7E98D3D29A234360027352D /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E98D3C29A234360027352D /* ImageDownloader.swift */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A73AC49429A2634C003EDED7 /* UIStackView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Extension.swift"; sourceTree = "<group>"; };
+		A73AC49629A26547003EDED7 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		A7C8E8FE29A2593D00A3FA95 /* CallbackQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallbackQueue.swift; sourceTree = "<group>"; };
 		A7E98D3A29A20FB10027352D /* ImageDownloadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloadView.swift; sourceTree = "<group>"; };
 		A7E98D3C29A234360027352D /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
@@ -41,6 +45,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A73AC49229A26194003EDED7 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A73AC49429A2634C003EDED7 /* UIStackView+Extension.swift */,
+				A73AC49629A26547003EDED7 /* UIView+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		A73AC49329A261A0003EDED7 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				A73AC49229A26194003EDED7 /* Extension */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
 		A7E98D3729A20F660027352D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -55,6 +76,7 @@
 			children = (
 				A7E98D3E29A254170027352D /* App */,
 				A7E98D3F29A254190027352D /* Scene */,
+				A73AC49329A261A0003EDED7 /* Util */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -184,6 +206,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7E98D3B29A20FB10027352D /* ImageDownloadView.swift in Sources */,
+				A73AC49529A2634C003EDED7 /* UIStackView+Extension.swift in Sources */,
+				A73AC49729A26547003EDED7 /* UIView+Extension.swift in Sources */,
 				A7E98D3D29A234360027352D /* ImageDownloader.swift in Sources */,
 				A7F474FF29A2052900121F0B /* ImageDownloadViewController.swift in Sources */,
 				A7F474FB29A2052900121F0B /* AppDelegate.swift in Sources */,
