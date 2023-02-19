@@ -12,6 +12,7 @@
 		A7E98D3D29A234360027352D /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E98D3C29A234360027352D /* ImageDownloader.swift */; };
 		A7F474FB29A2052900121F0B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F474FA29A2052900121F0B /* AppDelegate.swift */; };
 		A7F474FD29A2052900121F0B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F474FC29A2052900121F0B /* SceneDelegate.swift */; };
+		A7F474FF29A2052900121F0B /* ImageDownloadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F474FE29A2052900121F0B /* ImageDownloadViewController.swift */; };
 		A7F4750429A2052A00121F0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7F4750329A2052A00121F0B /* Assets.xcassets */; };
 		A7F4750729A2052A00121F0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7F4750529A2052A00121F0B /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -23,6 +24,7 @@
 		A7F474F729A2052900121F0B /* ImageDownloader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageDownloader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7F474FA29A2052900121F0B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A7F474FC29A2052900121F0B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A7F474FE29A2052900121F0B /* ImageDownloadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloadViewController.swift; sourceTree = "<group>"; };
 		A7F4750329A2052A00121F0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A7F4750629A2052A00121F0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A7F4750829A2052A00121F0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 				A7C8E8FE29A2593D00A3FA95 /* CallbackQueue.swift */,
 				A7E98D3C29A234360027352D /* ImageDownloader.swift */,
 				A7E98D3A29A20FB10027352D /* ImageDownloadView.swift */,
+				A7F474FE29A2052900121F0B /* ImageDownloadViewController.swift */,
 			);
 			path = Scene;
 			sourceTree = "<group>";
@@ -182,6 +185,7 @@
 			files = (
 				A7E98D3B29A20FB10027352D /* ImageDownloadView.swift in Sources */,
 				A7E98D3D29A234360027352D /* ImageDownloader.swift in Sources */,
+				A7F474FF29A2052900121F0B /* ImageDownloadViewController.swift in Sources */,
 				A7F474FB29A2052900121F0B /* AppDelegate.swift in Sources */,
 				A7C8E8FF29A2593D00A3FA95 /* CallbackQueue.swift in Sources */,
 				A7F474FD29A2052900121F0B /* SceneDelegate.swift in Sources */,
