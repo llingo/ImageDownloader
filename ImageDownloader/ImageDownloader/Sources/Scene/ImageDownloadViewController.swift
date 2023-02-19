@@ -15,7 +15,7 @@ class ImageDownloadViewController: UIViewController {
 
     private let titleLabel: UILabel = {
         let label = UILabel()
-        label.text = "원티트 iOS 챌린지"
+        label.text = "Wanted iOS Challenge"
         label.textAlignment = .center
         label.font = .systemFont(ofSize: 24, weight: .bold)
 
