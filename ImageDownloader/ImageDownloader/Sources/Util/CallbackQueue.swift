@@ -29,7 +29,7 @@ enum CallbackQueue {
 
 extension DispatchQueue {
     func asyncSafe(_ block: @escaping () -> Void) {
-        if self == DispatchQueue.main && Thread.isMainThread {
+        if self === DispatchQueue.main && Thread.isMainThread {
             block()
         } else {
             async { block() }
