@@ -58,6 +58,8 @@
 			isa = PBXGroup;
 			children = (
 				A73AC49229A26194003EDED7 /* Extension */,
+				A7C8E8FE29A2593D00A3FA95 /* CallbackQueue.swift */,
+				A7E98D3C29A234360027352D /* ImageDownloader.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -101,8 +103,6 @@
 		A7E98D3F29A254190027352D /* Scene */ = {
 			isa = PBXGroup;
 			children = (
-				A7C8E8FE29A2593D00A3FA95 /* CallbackQueue.swift */,
-				A7E98D3C29A234360027352D /* ImageDownloader.swift */,
 				A7E98D3A29A20FB10027352D /* ImageDownloadView.swift */,
 				A7F474FE29A2052900121F0B /* ImageDownloadViewController.swift */,
 			);
