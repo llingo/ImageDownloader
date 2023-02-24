@@ -5,7 +5,7 @@
 
 import UIKit
 
-class ImageDownloadViewController: UIViewController {
+final class ImageDownloadViewController: UIViewController {
 
     private let imageDownloadView1 = ImageDownloadView()
     private let imageDownloadView2 = ImageDownloadView()
@@ -47,13 +47,16 @@ class ImageDownloadViewController: UIViewController {
 
     private func configureUI() {
         configureView()
+        configureLayout()
         configureLoadAllButton()
         bind()
     }
 
     private func configureView() {
         view.backgroundColor = .systemBackground
+    }
 
+    private func configureLayout() {
         let contentView = UIStackView(
             axis: .vertical,
             distribution: .equalSpacing,
@@ -66,8 +69,7 @@ class ImageDownloadViewController: UIViewController {
                 imageDownloadView4,
                 imageDownloadView5,
                 loadAllButton
-            ]
-        )
+            ])
 
         view.addSubviews([contentView])
         let safeAreaGuide = view.safeAreaLayoutGuide

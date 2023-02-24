@@ -74,7 +74,10 @@ final class ImageDownloadView: UIView {
                 self?.imageView.image = UIImage(systemName: "exclamationmark.square.fill")
             }
 
-            self?.observation?.invalidate()
+            if let observation = self?.observation {
+                self?.observation = nil
+                observation.invalidate()
+            }
         }
 
         observation = task.progress.observe(\.fractionCompleted) { [weak self] progress, value in
@@ -93,7 +96,6 @@ final class ImageDownloadView: UIView {
 
     private func configureUI() {
         configureView()
-        configureImageView()
         configureLoadButton()
     }
 
@@ -109,8 +111,7 @@ final class ImageDownloadView: UIView {
                     progressLabel
                 ]),
                 loadButton
-            ]
-        )
+            ])
 
         addSubviews([contentView])
         loadButton.setContentHuggingPriority(.defaultHigh, for: .horizontal)
@@ -120,12 +121,7 @@ final class ImageDownloadView: UIView {
             contentView.topAnchor.constraint(equalTo: topAnchor),
             contentView.bottomAnchor.constraint(equalTo: bottomAnchor),
             contentView.leadingAnchor.constraint(equalTo: leadingAnchor),
-            contentView.trailingAnchor.constraint(equalTo: trailingAnchor)
-        ])
-    }
-
-    private func configureImageView() {
-        NSLayoutConstraint.activate([
+            contentView.trailingAnchor.constraint(equalTo: trailingAnchor),
             imageView.widthAnchor.constraint(equalTo: widthAnchor, multiplier: 0.4),
             imageView.widthAnchor.constraint(equalTo: imageView.heightAnchor, multiplier: 1.5),
             progressView.heightAnchor.constraint(equalToConstant: 8)

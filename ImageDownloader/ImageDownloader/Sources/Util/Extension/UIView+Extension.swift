@@ -2,8 +2,6 @@
 //  UIView+Extension.swift
 //  ImageDownloader
 //
-//  Created by Rimp on 2023/02/19.
-//
 
 import UIKit
 
