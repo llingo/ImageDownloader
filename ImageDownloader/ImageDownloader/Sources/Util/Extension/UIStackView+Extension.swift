@@ -20,6 +20,6 @@ extension UIStackView {
         self.distribution = distribution
         self.spacing = spacing
         self.directionalLayoutMargins = padding
-        self.insetsLayoutMarginsFromSafeArea = true
+        self.isLayoutMarginsRelativeArrangement = true
     }
 }
